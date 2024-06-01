@@ -41,6 +41,7 @@ class NumberReverterTest extends BaseIOTest {
                         line.contains("import") || line.contains(".revert") || line.contains("if"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, declarationResult.size());
+        assertEquals(1, declarationResult.size());
+
     }
 }

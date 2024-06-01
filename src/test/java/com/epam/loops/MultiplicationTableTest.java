@@ -47,7 +47,8 @@ class MultiplicationTableTest extends BaseIOTest {
 
     @Test
     void printTablePrintsMultiplicationTableFor5() {
-        String expectedTable = "1 x 5 = 5\n" +
+        String expectedTable =
+                "1 x 5 = 5\n" +
                 "2 x 5 = 10\n" +
                 "3 x 5 = 15\n" +
                 "4 x 5 = 20\n" +

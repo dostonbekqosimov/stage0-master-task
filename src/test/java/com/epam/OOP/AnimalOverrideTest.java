@@ -32,7 +32,7 @@ public class AnimalOverrideTest {
 
             Method getDescription = Dog.class.getMethod("getDescription");
 
-            Assertions.assertEquals("This animal is mostly brown. It has 4 paws and a fur.", getDescription.invoke(dog), "Method getDescription() does not work correctly for Dog class");
+            Assertions.assertEquals("This animal is mostly brown. It has 4 paws and has fur.", getDescription.invoke(dog), "Method getDescription() does not work correctly for Dog class");
         } catch (NoSuchMethodException | InstantiationException | IllegalAccessException |
                  InvocationTargetException e) {
             Assertions.fail("Some Dog class configuration problems");
